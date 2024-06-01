@@ -148,7 +148,7 @@ class ReservationSerializer(serializers.ModelSerializer):
 
 class ReservationListSerializer(ReservationSerializer):
     tickets = TicketListSerializer(many=True, read_only=True)
-    user = UserSerializer(read_only=True)
+    user = serializers.EmailField(source="user.email", read_only=True)
 
     class Meta:
         model = Reservation
