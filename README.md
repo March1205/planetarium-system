@@ -17,19 +17,27 @@ This project provides an API to browse and book planetarium tickets. The API is 
 
 ## Environment Variables
 
-Create a `.env` file in the root directory of the project and add the following variables:
+Create a `.env` file in the root directory of the project. You can use the `.env.example` file as a template:
 
-```env
-POSTGRES_PASSWORD=your_postgres_password
-POSTGRES_USER=your_postgres_user
-POSTGRES_DB=your_postgres_db
-POSTGRES_HOST=db
-POSTGRES_PORT=5432
-PGDATA=/var/lib/postgresql/data
-SECRET_KEY=your_secret_key
-DEBUG=True
-ALLOWED_HOSTS=127.0.0.1,localhost
-```
+1. Copy the `.env.example` file to a new file named `.env`:
+
+    ```sh
+    cp .env.example .env
+    ```
+
+2. Update the `.env` file with your own values:
+
+    ```env
+    POSTGRES_PASSWORD=your_postgres_password
+    POSTGRES_USER=your_postgres_user
+    POSTGRES_DB=your_postgres_db
+    POSTGRES_HOST=db
+    POSTGRES_PORT=5432
+    PGDATA=/var/lib/postgresql/data
+    SECRET_KEY=your_secret_key
+    DEBUG=True
+    ALLOWED_HOSTS=127.0.0.1,localhost
+    ```
 
 
 ## Setting Up the Project
