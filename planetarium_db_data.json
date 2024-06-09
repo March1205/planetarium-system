@@ -1,0 +1,212 @@
+[
+    {
+        "model": "user.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$7iZ3OnTgjK5o$3b7D9HY9t3GKh7cBG8N+kvX5tzA4U6VObzYQd1d1fyA=",
+            "last_login": "2024-06-01T12:00:00Z",
+            "is_superuser": false,
+            "email": "user1@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-01T12:00:00Z",
+            "first_name": "User",
+            "last_name": "One",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$7iZ3OnTgjK5o$3b7D9HY9t3GKh7cBG8N+kvX5tzA4U6VObzYQd1d1fyA=",
+            "last_login": "2024-06-01T12:00:00Z",
+            "is_superuser": false,
+            "email": "user2@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-01T12:00:00Z",
+            "first_name": "User",
+            "last_name": "Two",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$7iZ3OnTgjK5o$3b7D9HY9t3GKh7cBG8N+kvX5tzA4U6VObzYQd1d1fyA=",
+            "last_login": "2024-06-01T12:00:00Z",
+            "is_superuser": false,
+            "email": "user3@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-01T12:00:00Z",
+            "first_name": "User",
+            "last_name": "Three",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$7iZ3OnTgjK5o$3b7D9HY9t3GKh7cBG8N+kvX5tzA4U6VObzYQd1d1fyA=",
+            "last_login": "2024-06-01T12:00:00Z",
+            "is_superuser": false,
+            "email": "user4@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-01T12:00:00Z",
+            "first_name": "User",
+            "last_name": "Four",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "planetarium.planetariumdome",
+        "pk": 1,
+        "fields": {
+            "name": "Alpha Dome",
+            "rows": 10,
+            "seats_in_row": 20
+        }
+    },
+    {
+        "model": "planetarium.planetariumdome",
+        "pk": 2,
+        "fields": {
+            "name": "Beta Dome",
+            "rows": 8,
+            "seats_in_row": 15
+        }
+    },
+    {
+        "model": "planetarium.showtheme",
+        "pk": 1,
+        "fields": {
+            "name": "Space Exploration"
+        }
+    },
+    {
+        "model": "planetarium.showtheme",
+        "pk": 2,
+        "fields": {
+            "name": "Galaxy Exploration"
+        }
+    },
+    {
+        "model": "planetarium.astronomyshow",
+        "pk": 1,
+        "fields": {
+            "title": "Journey Through the Stars",
+            "description": "An immersive experience through the stars.",
+            "image": null,
+            "theme": [1]
+        }
+    },
+    {
+        "model": "planetarium.astronomyshow",
+        "pk": 2,
+        "fields": {
+            "title": "Exploring the Universe",
+            "description": "A detailed look at the universe.",
+            "image": null,
+            "theme": [2]
+        }
+    },
+    {
+        "model": "planetarium.showsession",
+        "pk": 1,
+        "fields": {
+            "show_time": "2024-06-10T14:00:00Z",
+            "astronomy_show": 1,
+            "planetarium_dome": 1
+        }
+    },
+    {
+        "model": "planetarium.showsession",
+        "pk": 2,
+        "fields": {
+            "show_time": "2024-06-11T16:00:00Z",
+            "astronomy_show": 2,
+            "planetarium_dome": 2
+        }
+    },
+    {
+        "model": "planetarium.reservation",
+        "pk": 1,
+        "fields": {
+            "created_at": "2024-06-01T12:00:00Z",
+            "user": 1
+        }
+    },
+    {
+        "model": "planetarium.reservation",
+        "pk": 2,
+        "fields": {
+            "created_at": "2024-06-01T12:00:00Z",
+            "user": 2
+        }
+    },
+    {
+        "model": "planetarium.reservation",
+        "pk": 3,
+        "fields": {
+            "created_at": "2024-06-01T12:00:00Z",
+            "user": 3
+        }
+    },
+    {
+        "model": "planetarium.reservation",
+        "pk": 4,
+        "fields": {
+            "created_at": "2024-06-01T12:00:00Z",
+            "user": 4
+        }
+    },
+    {
+        "model": "planetarium.ticket",
+        "pk": 1,
+        "fields": {
+            "show_session": 1,
+            "reservation": 1,
+            "row": 1,
+            "seat": 1
+        }
+    },
+    {
+        "model": "planetarium.ticket",
+        "pk": 2,
+        "fields": {
+            "show_session": 1,
+            "reservation": 1,
+            "row": 1,
+            "seat": 2
+        }
+    },
+    {
+        "model": "planetarium.ticket",
+        "pk": 3,
+        "fields": {
+            "show_session": 2,
+            "reservation": 2,
+            "row": 2,
+            "seat": 3
+        }
+    },
+    {
+        "model": "planetarium.ticket",
+        "pk": 4,
+        "fields": {
+            "show_session": 2,
+            "reservation": 2,
+            "row": 2,
+            "seat": 4
+        }
+    }
+]
